@@ -11,6 +11,8 @@
 		F51F26892663685F0067F77C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F26882663685F0067F77C /* ViewController.swift */; };
 		F51F268B266368600067F77C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F51F268A266368600067F77C /* Assets.xcassets */; };
 		F51F268E266368600067F77C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51F268C266368600067F77C /* Main.storyboard */; };
+		F51F26972663686F0067F77C /* MetalCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F26962663686F0067F77C /* MetalCircleView.swift */; };
+		F5762F95266370C600579C42 /* CircleShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = F5762F94266370C600579C42 /* CircleShader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,9 @@
 		F51F268D266368600067F77C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F51F268F266368600067F77C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F51F2690266368600067F77C /* DemoMetal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DemoMetal.entitlements; sourceTree = "<group>"; };
+		F51F26962663686F0067F77C /* MetalCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCircleView.swift; sourceTree = "<group>"; };
+		F5762F94266370C600579C42 /* CircleShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CircleShader.metal; sourceTree = "<group>"; };
+		F5762F962663785000579C42 /* MetalCircleView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MetalCircleView.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +58,7 @@
 		F51F26852663685F0067F77C /* DemoMetal */ = {
 			isa = PBXGroup;
 			children = (
+				F5762F93266370AB00579C42 /* MetalCircleView */,
 				F51F26862663685F0067F77C /* AppDelegate.swift */,
 				F51F26882663685F0067F77C /* ViewController.swift */,
 				F51F268A266368600067F77C /* Assets.xcassets */,
@@ -61,6 +67,16 @@
 				F51F2690266368600067F77C /* DemoMetal.entitlements */,
 			);
 			path = DemoMetal;
+			sourceTree = "<group>";
+		};
+		F5762F93266370AB00579C42 /* MetalCircleView */ = {
+			isa = PBXGroup;
+			children = (
+				F51F26962663686F0067F77C /* MetalCircleView.swift */,
+				F5762F94266370C600579C42 /* CircleShader.metal */,
+				F5762F962663785000579C42 /* MetalCircleView.playground */,
+			);
+			path = MetalCircleView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,6 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5762F95266370C600579C42 /* CircleShader.metal in Sources */,
+				F51F26972663686F0067F77C /* MetalCircleView.swift in Sources */,
 				F51F26892663685F0067F77C /* ViewController.swift in Sources */,
 				F51F26872663685F0067F77C /* AppDelegate.swift in Sources */,
 			);
