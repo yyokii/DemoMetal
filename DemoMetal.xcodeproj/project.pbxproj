@@ -13,6 +13,10 @@
 		F51F268E266368600067F77C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F51F268C266368600067F77C /* Main.storyboard */; };
 		F51F26972663686F0067F77C /* MetalCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F26962663686F0067F77C /* MetalCircleView.swift */; };
 		F5762F95266370C600579C42 /* CircleShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = F5762F94266370C600579C42 /* CircleShader.metal */; };
+		F5762F99266532DD00579C42 /* SignalProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5762F98266532DD00579C42 /* SignalProcessing.swift */; };
+		F5762F9B2665335200579C42 /* AudioVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5762F9A2665335200579C42 /* AudioVisualizer.swift */; };
+		F5762F9D2665357100579C42 /* AudioVisualizerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5762F9C2665357100579C42 /* AudioVisualizerVC.swift */; };
+		F5762F9F2665377D00579C42 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5762F9E2665377D00579C42 /* music.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		F51F26962663686F0067F77C /* MetalCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalCircleView.swift; sourceTree = "<group>"; };
 		F5762F94266370C600579C42 /* CircleShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CircleShader.metal; sourceTree = "<group>"; };
 		F5762F962663785000579C42 /* MetalCircleView.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MetalCircleView.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F5762F98266532DD00579C42 /* SignalProcessing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalProcessing.swift; sourceTree = "<group>"; };
+		F5762F9A2665335200579C42 /* AudioVisualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizer.swift; sourceTree = "<group>"; };
+		F5762F9C2665357100579C42 /* AudioVisualizerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizerVC.swift; sourceTree = "<group>"; };
+		F5762F9E2665377D00579C42 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		F51F26852663685F0067F77C /* DemoMetal */ = {
 			isa = PBXGroup;
 			children = (
+				F5762F972665327C00579C42 /* AudioVisualizer */,
 				F5762F93266370AB00579C42 /* MetalCircleView */,
 				F51F26862663685F0067F77C /* AppDelegate.swift */,
 				F51F26882663685F0067F77C /* ViewController.swift */,
@@ -77,6 +86,17 @@
 				F5762F962663785000579C42 /* MetalCircleView.playground */,
 			);
 			path = MetalCircleView;
+			sourceTree = "<group>";
+		};
+		F5762F972665327C00579C42 /* AudioVisualizer */ = {
+			isa = PBXGroup;
+			children = (
+				F5762F9A2665335200579C42 /* AudioVisualizer.swift */,
+				F5762F9C2665357100579C42 /* AudioVisualizerVC.swift */,
+				F5762F98266532DD00579C42 /* SignalProcessing.swift */,
+				F5762F9E2665377D00579C42 /* music.mp3 */,
+			);
+			path = AudioVisualizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +158,7 @@
 			files = (
 				F51F268B266368600067F77C /* Assets.xcassets in Resources */,
 				F51F268E266368600067F77C /* Main.storyboard in Resources */,
+				F5762F9F2665377D00579C42 /* music.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +170,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5762F95266370C600579C42 /* CircleShader.metal in Sources */,
+				F5762F9D2665357100579C42 /* AudioVisualizerVC.swift in Sources */,
 				F51F26972663686F0067F77C /* MetalCircleView.swift in Sources */,
+				F5762F99266532DD00579C42 /* SignalProcessing.swift in Sources */,
 				F51F26892663685F0067F77C /* ViewController.swift in Sources */,
+				F5762F9B2665335200579C42 /* AudioVisualizer.swift in Sources */,
 				F51F26872663685F0067F77C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
