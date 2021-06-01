@@ -17,6 +17,7 @@
 		F5762F9B2665335200579C42 /* AudioVisualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5762F9A2665335200579C42 /* AudioVisualizer.swift */; };
 		F5762F9D2665357100579C42 /* AudioVisualizerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5762F9C2665357100579C42 /* AudioVisualizerVC.swift */; };
 		F5762F9F2665377D00579C42 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5762F9E2665377D00579C42 /* music.mp3 */; };
+		F5762FA72666C13B00579C42 /* CircleShaderForAV.metal in Sources */ = {isa = PBXBuildFile; fileRef = F5762FA62666C13B00579C42 /* CircleShaderForAV.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F5762F9A2665335200579C42 /* AudioVisualizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizer.swift; sourceTree = "<group>"; };
 		F5762F9C2665357100579C42 /* AudioVisualizerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioVisualizerVC.swift; sourceTree = "<group>"; };
 		F5762F9E2665377D00579C42 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		F5762FA62666C13B00579C42 /* CircleShaderForAV.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CircleShaderForAV.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				F5762F9C2665357100579C42 /* AudioVisualizerVC.swift */,
 				F5762F98266532DD00579C42 /* SignalProcessing.swift */,
 				F5762F9E2665377D00579C42 /* music.mp3 */,
+				F5762FA62666C13B00579C42 /* CircleShaderForAV.metal */,
 			);
 			path = AudioVisualizer;
 			sourceTree = "<group>";
@@ -176,6 +179,7 @@
 				F51F26892663685F0067F77C /* ViewController.swift in Sources */,
 				F5762F9B2665335200579C42 /* AudioVisualizer.swift in Sources */,
 				F51F26872663685F0067F77C /* AppDelegate.swift in Sources */,
+				F5762FA72666C13B00579C42 /* CircleShaderForAV.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

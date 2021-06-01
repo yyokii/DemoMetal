@@ -19,6 +19,7 @@ struct VertexOut {
 /*
  The first parameter is us taking in our array of vertex points that we’ll be passing in. Breaking down the syntax, we see we have a pointer to an array of vector floats. The vertex data, as you will see soon, needs to be passed in as “buffer data”. The [[buffer(0)]] specifies that we want the first (and our only) buffer data to be passed into this parameter. The constant attribute tells metal to store the vertex data in read-only memory space.
  The second parameter vid stands for “vector id”. This uniquely identifies which vertex we’re currently on; it will be used as the index for our vertexArray. Just as how in our vertexArray parameter we needed to let metal know that it needs to pass in, we let metal know to pass our vertex id into the vid parameter using [[vertex_id]] .
+
  */
 vertex VertexOut vertexShader(const constant vector_float2 *vertexArray [[buffer(0)]], unsigned int vid [[vertex_id]]){
     vector_float2 currentVertex = vertexArray[vid]; //fetch the current vertex we're on using the vid to index into our buffer data which holds all of our vertex points that we passed in

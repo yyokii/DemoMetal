@@ -91,10 +91,15 @@ class AudioVisualizerVC: NSViewController {
         let frames = buffer.frameLength
         
         let rmsValue = SignalProcessing.rms(data: channelData, frameLength: UInt(frames))
-        
         let interpolatedResults = SignalProcessing.interpolate(current: rmsValue, previous: prevRMSValue)
         prevRMSValue = rmsValue
         
+        //pass values to the audiovisualizer for the rendering
+        for rms in interpolatedResults {
+            audioVisualizer.loudnessMagnitude = rms
+        }        
+        
         let fftMagnitudes =  SignalProcessing.fft(data: channelData, setup: fftSetup!)
+        audioVisualizer.frequencyVertices = fftMagnitudes
     }
 }
