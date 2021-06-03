@@ -26,7 +26,7 @@ class AudioVisualizer: NSView {
     public var loudnessMagnitude : Float = 0.3 {
         didSet{
             loudnessUniformBuffer = metalDevice.makeBuffer(bytes: &loudnessMagnitude, length: MemoryLayout<Float>.stride, options: [])!
-            metalView.draw()
+            // metalView.draw()
         }
     }
     
@@ -158,7 +158,9 @@ extension AudioVisualizer : MTKViewDelegate {
         
         renderEncoder.endEncoding()
         commandBuffer.present(view.currentDrawable!)
-        commandBuffer.commit()
+        Dispatch.DispatchQueue.main.sync {
+            commandBuffer.commit()
+        }
     }
 }
 
